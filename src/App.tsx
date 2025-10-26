@@ -203,8 +203,8 @@ function App() {
                   </div>
                 )}
                 <div className="p-6">
-                  <div className="aspect-[4/3] rounded-lg mb-4 overflow-hidden bg-white">
-                    <img src={pkg.image} alt={pkg.title} className="w-full h-full object-cover" />
+                  <div className="aspect-[4/3] rounded-lg mb-4 overflow-hidden bg-gray-50 flex items-center justify-center">
+                    <img src={pkg.image} alt={pkg.title} className="w-full h-full object-contain" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.title}</h3>
                   <p className="text-gray-600 mb-4">{pkg.description}</p>
