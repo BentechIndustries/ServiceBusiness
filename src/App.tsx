@@ -81,15 +81,17 @@ function App() {
 
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <div className="aspect-video relative flex items-center justify-center">
+                <div className="relative">
                   <img
-                    src="/landscape.png?v=2"
+                    src="/landscape.png?v=3"
                     alt="Video Preview"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="w-full h-auto"
                   />
                   <div className="absolute inset-0 bg-black/20"></div>
-                  <div className="relative z-10 w-20 h-20 bg-white rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition">
-                    <Play className="w-10 h-10 text-blue-600 ml-1" fill="currentColor" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition">
+                      <Play className="w-10 h-10 text-blue-600 ml-1" fill="currentColor" />
+                    </div>
                   </div>
                 </div>
               </div>
