@@ -81,17 +81,15 @@ function App() {
 
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <div className="relative">
+                <div className="aspect-video relative flex items-center justify-center">
                   <img
-                    src="/landscape.png?v=3"
+                    src="/landscape.png"
                     alt="Video Preview"
-                    className="w-full h-auto"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-black/20"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition">
-                      <Play className="w-10 h-10 text-blue-600 ml-1" fill="currentColor" />
-                    </div>
+                  <div className="relative z-10 w-20 h-20 bg-white rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition">
+                    <Play className="w-10 h-10 text-blue-600 ml-1" fill="currentColor" />
                   </div>
                 </div>
               </div>
@@ -194,7 +192,7 @@ function App() {
                 description: "Comprehensive package for established businesses ready to scale their content",
                 features: ["25 Short-form Videos", "3 Long-form Videos", "Advanced Motion Graphics", "Analytics Reports", "Content Strategy"],
                 price: "$997",
-                image: "/Business Growth.png?v=2",
+                image: "/Business Growth.png",
                 popular: false
               }
             ].map((pkg, idx) => (
