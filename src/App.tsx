@@ -82,9 +82,9 @@ function App() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <div className="aspect-video relative flex items-center justify-center">
-                  <img 
-                    src="/landscape.png" 
-                    alt="Video Preview" 
+                  <img
+                    src="/landscape.png?v=2"
+                    alt="Video Preview"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-black/20"></div>
@@ -192,7 +192,7 @@ function App() {
                 description: "Comprehensive package for established businesses ready to scale their content",
                 features: ["25 Short-form Videos", "3 Long-form Videos", "Advanced Motion Graphics", "Analytics Reports", "Content Strategy"],
                 price: "$997",
-                image: "/Business Growth.png",
+                image: "/Business Growth.png?v=2",
                 popular: false
               }
             ].map((pkg, idx) => (
@@ -203,8 +203,8 @@ function App() {
                   </div>
                 )}
                 <div className="p-6">
-                  <div className="aspect-[4/3] rounded-lg mb-4 overflow-hidden bg-gray-50 flex items-center justify-center">
-                    <img src={pkg.image} alt={pkg.title} className="w-full h-full object-contain" />
+                  <div className="aspect-[4/3] rounded-lg mb-4 overflow-hidden bg-white">
+                    <img src={pkg.image} alt={pkg.title} className="w-full h-full object-cover" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.title}</h3>
                   <p className="text-gray-600 mb-4">{pkg.description}</p>
